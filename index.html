@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="https://github.com/marutiflex/script/blob/main/download-removebg-preview.png?raw=true" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://github.com/marutiflex/script/blob/main/download-removebg-preview.png?raw=true"
+        type="image/x-icon">
     <style type="text/css">
         body {
             color: #566787;
@@ -20,61 +22,70 @@
             font-family: 'Varela Round', sans-serif;
             font-size: 13px;
         }
-        
-        .login{
+
+        .login {
             display: block;
             width: 100%;
             height: 100vh;
-            background: rgb(121, 2, 121,0.5);
+            background: rgb(121, 2, 121, 0.5);
             position: absolute;
-            top: 0;  
+            top: 0;
         }
-        .login-box{
+
+        .login-box {
             width: 350px;
             height: 50vh;
             background: white;
-            border-radius: 15px ;
+            border-radius: 15px;
             top: 50%;
             position: absolute;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
-        .alingText{
+
+        .alingText {
             margin-top: 15px;
             text-align: center;
             color: purple;
         }
-        .userLogin{
+
+        .userLogin {
             margin-top: 25px;
             margin-bottom: 25px;
             display: flex;
             flex-direction: column;
             padding: 0px 15px 0px 15px;
         }
-        .userLogin label{
+
+        .userLogin label {
             color: purple;
         }
-        .userLogin input{
+
+        .userLogin input {
             height: 40px;
             outline: none;
             border: 1px solid purple;
             padding-left: 4.5px;
             border-radius: 10px;
         }
-        .opration{
+
+        .opration {
             display: flex;
             justify-content: space-around;
         }
-        .opration a{
+
+        .opration a {
             font-size: 15px;
             color: rgb(0, 132, 255);
             text-decoration: underline;
             transition: 0.3s;
         }
-        .opration a:hover{
+
+        .opration a:hover {
             transform: translateX(-1.5px);
         }
-         #loginform input[type="submit"]{
+
+        #loginform input[type="submit"] {
             width: 50%;
             height: 35px;
             border: none;
@@ -89,8 +100,9 @@
             margin-top: 25px;
             transition: 0.4s;
         }
-        #loginform input[type="submit"]:hover{
-            transform: translate(-50%,-5px);
+
+        #loginform input[type="submit"]:hover {
+            transform: translate(-50%, -5px);
         }
 
         .headContainer {
@@ -390,6 +402,105 @@
             display: none;
         }
 
+        .changePassword {
+            width: 100%;
+            height: 100vh;
+            background: rgba(63, 59, 59, 0.5);
+            top: 0;
+            position: absolute;
+        }
+
+        .changePassword-page {
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-53%, -50%);
+        }
+
+        .changePassword-content h4 {
+            color: rgb(0, 102, 255);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .change-Password-box {
+            width: 100%;
+            display: flex;
+            height: 35px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .new-Password-box {
+            width: 100%;
+            display: flex;
+            height: 35px;
+            margin-left: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .change-Password-box label,
+        .new-Password-box label {
+            width: 80px;
+            line-height: 35px;
+            color: #03a3e7;
+        }
+
+        .change-Password-box input,
+        .new-Password-box input {
+            width: 200px;
+            height: 32px;
+            line-height: 35px;
+            padding-left: 5px;
+            border: #03a3e7 1px solid;
+            outline: none;
+            border-radius: 10px;
+        }
+
+        form input[type="submit"] {
+            background: #03a3e7;
+            border: 1px solid #03a3e7;
+            color: white;
+            width: 160px;
+            height: 35px;
+            font-size: 15px;
+            border-radius: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: 0.4s;
+            bottom: 30px;
+        }
+
+        form input[type="submit"]:hover {
+            transform: translate(-50%, -3.5px);
+        }
+
+        #closeChangePassword {
+            color: red;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            right: 12px;
+            position: absolute;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        .genrateOTP {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .genrateOTP p {
+            color: green;
+            font-size: 12px;
+        }
+
         @media only screen and (max-width: 750px) {
 
             .flex-Container {
@@ -406,6 +517,16 @@
                 display: flex;
                 justify-content: space-between;
 
+            }
+
+            .filter-group {
+                padding-left: 10px;
+            }
+
+            .filter-group input {
+                width: 100%;
+                max-width: 280px;
+                margin-right: 10px;
             }
 
             .btn-info {
@@ -480,7 +601,7 @@
 
 
             .form-control-contaier .filter-group select {
-                width: 110%;
+                width: 200%;
             }
 
             table {
@@ -503,7 +624,9 @@
 
             thead tr th:nth-child(8),
             tbody tr td:nth-child(8) {
-                display: block;
+                display: flex;
+                transform: translateX(-7px);
+                position: relative;
             }
 
             .popup {
@@ -552,9 +675,13 @@
 
         }
 
-        @media only screen and (max-width:480px) {
+        @media only screen and (max-width:360px) {
             .form-control-contaier .filter-group label {
                 display: none;
+            }
+
+            select {
+                width: 48%;
             }
 
             .form-control-contaier {
@@ -580,13 +707,14 @@
                 <div class="table-title">
                     <div class="row flex-Container">
                         <div class="col-sm-4">
-                            <img src="https://github.com/marutiflex/script/blob/main/download-removebg-preview.png?raw=true">
-                            <h2 style="text-decoration: underline;"> Recent Pending Order</h2>
+                            <img
+                                src="https://github.com/marutiflex/script/blob/main/download-removebg-preview.png?raw=true">
+                            <h2 style="text-decoration: underline;"> Recent Order</h2>
                         </div>
                         <div class="col-sm-8 lineHeightChange">
                             <a href="#" class="btn btn-primary"><i class="material-icons">&#xE863;</i> <span>Refresh
                                     List</span></a>
-                            <a href="#" style="color: green; font-weight: bold;" class="btn btn-info"><i
+                            <a href="#" style="color: green; font-weight: bold;" id="userAccess" class="btn btn-info"><i
                                     class="material-icons">✉️</i> <span id="userIDEff"></span></a>
                         </div>
                     </div>
@@ -625,7 +753,7 @@
                         </div>
                     </div>
                 </div>
-                <table  class="table table-striped table-hover">
+                <table class="table table-striped table-hover">
                     <thead>
                         <tr>
                             <th>Order ID</th>
@@ -639,6 +767,7 @@
                         </tr>
                     </thead>
                     <tbody style="visibility:hidden;">
+                        <!--  style="visibility:hidden;" -->
                         <tr>
                             <td>Kol-ka-02541</td>
                             <td>Jun 15, 2017</td>
@@ -688,7 +817,8 @@
                             <td>Jun 15, 2017</td>
                             <td> Karthik Private Limited </a></td>
                             <td>London</td>
-                            <td>Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs <br> Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs </td>
+                            <td>Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs <br> Normal Flex - 200 GSM - BB - 4FT
+                                : 10 Rolls @2.5Rs </td>
                             <td>$254</td>
                             <td><span class="status text-success">&bull;</span> Delivered</td>
                             <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i
@@ -699,7 +829,8 @@
                             <td>Jun 15, 2024</td>
                             <td> Karthik Private Limited </a></td>
                             <td>London</td>
-                            <td>Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs <br> Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs <br> Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs </td>
+                            <td>Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs <br> Normal Flex - 200 GSM - BB - 4FT
+                                : 10 Rolls @2.5Rs <br> Normal Flex - 200 GSM - BB - 4FT : 10 Rolls @2.5Rs </td>
                             <td>$254</td>
                             <td><span class="status text-danger">&bull;</span> Processing</td>
                             <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i
@@ -735,7 +866,7 @@
             </div>
         </div>
     </div>
-    <div class="login" >
+    <div class="login">
         <div class="login-box">
             <h4 class="alingText">Login to Marutiflex Order</h4>
             <div class="login-Content">
@@ -748,16 +879,99 @@
                         <label for="password">Password</label>
                         <input required type="password" id="password" placeholder="Enter password">
                     </div>
-                
-                <div class="opration">
-                    <a href="#" id="registered" >Signup</a>
-                    <a href="#" id="registered" >Forgot Password</a>
-                </div>
-                <input  type="submit"  value="Login" id="loginToPage">
-            </form>
+
+                    <div class="opration">
+                        <a href="#" id="registered">Signup</a>
+                        <a href="#" id="registered">Forgot Password</a>
+                    </div>
+                    <input type="submit" value="Login" id="loginToPage">
+                </form>
             </div>
         </div>
     </div>
+    <div class="changePassword" style="display: none;">
+        <form id="changePassword">
+            <div class="changePassword-page">
+                <div class="changePassword-content">
+                    <i id="closeChangePassword">X</i>
+                    <h4>Change Password</h4>
+                    <div class="change-Password-box">
+                        <label for="email">Email ID :</label>
+                        <input type="email" id="changePasswordEmail" required disabled value="it@gmail.com">
+                    </div>
+                    <div class="change-Password-box">
+                        <label for="otp">OTP :</label>
+                        <input type="number" id="otp" required>
+                    </div>
+                    <div class="new-Password-box">
+                        <label for="NewPassword">Password :</label>
+                        <input type="password" id="NewPassword" required>
+                    </div>
+                    <div class="genrateOTP">
+                        <p id="sentOtpVisible" style="visibility: hidden;">OTP Sent</p>
+                        <a href="#" id="genrateOTPtoMail">Generate OTP</a>
+                    </div>
+                    <div class="genrateOTP">
+                        <p id="sucessMessage" style="visibility: hidden;">Password Changed</p>
+                    </div>
+                    <input type="submit" id="changePasswordSubmit" value="Change Password">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('changePasswordSubmit').addEventListener('click', function () {
+            var emailID = document.getElementById('changePasswordEmail').value;
+            var otpSent = + document.getElementById('otp').value;
+            var NewPassword = document.getElementById('NewPassword').value;
+
+            if (otpSent !== 456789) {
+                console.log('okay')
+                document.getElementById('sucessMessage').style.color = 'red';
+                document.getElementById('sucessMessage').innerHTML = 'Wrong OTP';
+                document.getElementById('sucessMessage').style.visibility = 'visible';
+                document.getElementsByClassName('genrateOTP')[0].style.display = 'none'
+                setTimeout(function () {
+                    document.getElementById('sucessMessage').style.visibility = 'hidden';
+                    document.getElementById('sucessMessage').style.color = 'green';
+                    document.getElementById('sucessMessage').innerHTML = 'Password Changed';
+                    document.getElementsByClassName('genrateOTP')[0].style.display = 'flex'
+                }, 5000);
+            }
+            else {
+                if (NewPassword == "") {
+                    alert('Please Set new Password')
+                } else {
+                    document.getElementById('sucessMessage').style.visibility = 'visible';
+                    document.getElementsByClassName('genrateOTP')[0].style.display = 'none';
+                    setTimeout(function () {
+                        document.getElementsByClassName('changePassword')[0].style.display = 'none';
+                        document.getElementById('sucessMessage').style.visibility = 'hidden';
+                    }, 5000);
+                }
+            }
+
+        })
+        document.getElementById('genrateOTPtoMail').addEventListener('click', function () {
+            document.getElementById('sentOtpVisible').style.visibility = 'visible';
+            setTimeout(function () {
+                document.getElementById('sentOtpVisible').style.visibility = 'hidden';
+            }, 5000);
+        })
+        document.getElementById('userAccess').addEventListener('click', function () {
+            var userIDEff = document.getElementById('userIDEff').innerHTML;
+            document.getElementById('changePasswordEmail').value = userIDEff;
+            document.getElementsByClassName('changePassword')[0].style.display = 'block';
+            document.getElementById('otp').value = '';
+            document.getElementById('NewPassword').value = '';
+        })
+        document.getElementById('changePassword').addEventListener('submit', function (e) {
+            e.preventDefault();
+        })
+        document.getElementById('closeChangePassword').addEventListener('click', function () {
+            document.getElementsByClassName('changePassword')[0].style.display = 'none';
+        })
+    </script>
     <script>
         var docs = document.getElementsByClassName('ShowOrder');
         for (let i = 0; i < docs.length; i++) {
@@ -810,13 +1024,13 @@
 
     </script>
     <script>
-        document.getElementById('loginform').addEventListener('submit',function(e){
+        document.getElementById('loginform').addEventListener('submit', function (e) {
             e.preventDefault();
         })
-        document.getElementById('loginToPage').addEventListener('click',function(){
+        document.getElementById('loginToPage').addEventListener('click', function () {
             var email = document.getElementById('EmailID').value;
             var password = document.getElementById('password').value;
-            if(email !=="" || password !==""){
+            if (email !== "" || password !== "") {
                 document.getElementsByClassName('login')[0].style.display = 'none';
                 document.getElementsByTagName('tbody')[0].style.visibility = 'visible';
                 document.getElementById('userIDEff').innerHTML = email;
